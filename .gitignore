@@ -1,5 +1,8 @@
 # App and ide  specific
 ## /etc/*.yml
+stub/
+*.sqlite3
+*.db
 /*.obj
 /downloads/*
 /logs/*
