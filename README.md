@@ -2,9 +2,8 @@
 
 ## Install
 
-`pip install  git+https://gitlab.prjx.uk/kelvin/prjxcore.git`
-
-`pip install --upgrade git+https://gitlab.prjx.uk/kelvin/prjxcore.git`
+`pip install  git+https://github.com/projx/prjxcore.git`
+`pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
 
