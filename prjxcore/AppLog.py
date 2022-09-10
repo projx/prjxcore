@@ -33,8 +33,7 @@ class applog:
             cls.set_console_handler()
 
         if to_file != False:
-            cls.set_file_handler()
-
+            cls.set_file_handler(to_file)
 
     @classmethod
     def set_console_handler(cls):
@@ -55,11 +54,6 @@ class applog:
         handler = logging.handlers.SysLogHandler(address=(host, port), socktype=socket_type) ## socktype=socket.SOCK_STREAM or SOCK_DGRAM
         handler.setFormatter(cls.formatter)
         cls.handler.addHandler(handler)
-
-
-    @classmethod
-    def set_enabled(cls, status):
-        cls.loggingEnabled = status
 
 
     @classmethod
