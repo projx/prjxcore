@@ -39,6 +39,10 @@ class ConfigManager():
         return cls.config[section][value]
 
     @classmethod
+    def get(cls, section, value):
+        return cls.config[section][value]
+
+    @classmethod
     def __get_os_path(cls):
         dir_path = os.path.dirname(os.path.realpath(__file__))
         return dir_path
