@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+# Author:       Kelvin W
+# Date:         2020
+# Description:  Very simply container for working with SQLite files
+# Note:         All calls are Static
+
+
 import sqlite3
 from sqlite3 import Error
 import os

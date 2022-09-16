@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+# Author:       Kelvin W
+# Date:         2020
+# Description:  Stores configuration information for scripts, which it can load and same from a yaml file(s)... It
+#               can load multiple yaml files, these are loaded as "sections".
+# Note:         All calls are Static
+
 import yaml
 import json
 import os

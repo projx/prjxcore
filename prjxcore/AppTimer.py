@@ -1,20 +1,13 @@
+# -*- coding: utf-8 -*-
+# Author:       Kelvin W
+# Date:         2020
+# Description:  Wrapper for python logging, specifically for logging to console and file,
+#               note all calls are Static
+
+
 import time
 from timeit import default_timer as timer
 from datetime import timedelta
-
-### An old implementation ...
-# class QTimer():
-#     time_list = {}
-#
-#     @classmethod
-#     def add(cls, name):
-#         cls.time_list[name] = time.perf_counter()
-#
-#     @classmethod
-#     def get_time(cls, name):
-#         elapsed_time = time.perf_counter() - float(cls.time_list[name])
-#         return format(elapsed_time, '.4f')
-
 
 class AppTimer(object):
     timers = {}
@@ -36,6 +29,7 @@ class AppTimer(object):
         time = timer() - cls.timers[name]
         if record:
             cls.records[name] = time
+
         return time
 
     @classmethod
