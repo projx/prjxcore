@@ -4,6 +4,8 @@
 
 `pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.17.tar.gz`
 
+'pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.19.tar.gz'
+
 `pip install  git+https://github.com/projx/prjxcore.git`
 
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
