@@ -8,16 +8,19 @@ import time
 from abc import ABC, abstractmethod
 import requests
 from prjxcore.AppTimer import AppTimer
-
+from pprint import pprint
 ### https://kuma.prjx.uk/api/push/cc0gz3IGAd?status=up&msg=ASDASDASDASD&ping=40
 
 class Hook(object):
     url = None
     use_timer = None
+    logs = []
 
 class HookSender(Hook):
 
-    def __init__(self, url, use_timer=True):
+
+    def __init__(self, url, use_timer=False):
+        self.logs = []
         self.url = url
         self.use_timer = use_timer
         if self.use_timer:
@@ -25,18 +28,25 @@ class HookSender(Hook):
         else:
             self.use_timer = False
 
+    def log(self, msg):
+        self.logs.append(msg)
+
     def send(self, status, msg, ping):
         if self.use_timer:
            ping = AppTimer.get_time(self.url)
            ping = round(ping*1000)
-           print("Ping in MS: {}".format(ping))
+           self.log("Ping in MS: {}".format(ping))
 
 
-        print("Ping time is {}".format(ping))
+        self.log("Ping time is {}".format(ping))
         url = self.url + "?status={}&msg={}&ping={}".format(status, msg, ping)
-        print("Sending to {}".format(url))
+        self.log("Sending to {}".format(url))
         r = requests.get(url)
-        print(r.text)
+        self.log(r.text)
+        if r.status_code == 200:
+            return True
+        else:
+            return False
 
 class HookManager(object):
     hooks = dict()
