@@ -11,6 +11,7 @@
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
+- [v0.20](https://github.com/projx/prjxcore/archive/refs/tags/v0.20.tar.gz) - Removed debug code caused unecessary output
 - [v0.19](https://github.com/projx/prjxcore/archive/refs/tags/v0.19.tar.gz) - Added Uptime Kuma webhook manager.
 - [v0.18](https://github.com/projx/prjxcore/archive/refs/tags/v0.18.tar.gz) - Tweaks to ConfigManager.
 - [v0.17](https://github.com/projx/prjxcore/archive/refs/tags/v0.17.tar.gz) - Fixed AppLog constructor, which was not passing the file-logging path through
