@@ -26,7 +26,8 @@ class applog:
     def setup(cls, to_console = True, to_file = False, name = "LOCAL"):
         cls.handler = logging.getLogger()
         cls.handler.setLevel(logging.DEBUG)
-        cls.formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
+        ###cls.formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
+        cls.formatter = logging.Formatter('[%(asctime)s] [{}] [%(levelname)s] %(message)s'.format(name))
 
         ## Setup Console Logging..
         if to_console == True:
