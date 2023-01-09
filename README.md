@@ -2,9 +2,9 @@
 
 ## Install
 
-`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.22.tar.gz`
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.24.tar.gz`
 
-'pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.23.tar.gz'
+'pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.24.tar.gz'
 
 `pip install  git+https://github.com/projx/prjxcore.git`
 
