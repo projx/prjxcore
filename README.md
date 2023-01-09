@@ -11,6 +11,7 @@
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
+- [v0.24](https://github.com/projx/prjxcore/archive/refs/tags/v0.24.tar.gz) - Fix for Base class 
 - [v0.23](https://github.com/projx/prjxcore/archive/refs/tags/v0.23.tar.gz) - Added Factory class, This is utility class for loading/saving (pickling) objects, also has functions for creating references to classes and functions, so they can be dynamically created.
 - [v0.22](https://github.com/projx/prjxcore/archive/refs/tags/v0.22.tar.gz) - Updated ConfigManager with new functions
 - [v0.21](https://github.com/projx/prjxcore/archive/refs/tags/v0.21.tar.gz) - Fix AppLog output format
