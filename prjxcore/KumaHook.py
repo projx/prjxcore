@@ -41,7 +41,7 @@ class HookSender(Hook):
         self.log("Ping time is {}".format(ping))
         url = self.url + "?status={}&msg={}&ping={}".format(status, msg, ping)
         self.log("Sending to {}".format(url))
-        r = requests.get(url)
+        r = requests.get(url, verify=False)
         self.log(r.text)
         if r.status_code == 200:
             return True
