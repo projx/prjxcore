@@ -2,15 +2,16 @@
 
 ## Install
 
-`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.25.tar.gz`
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.26.tar.gz`
 
-'pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.25.tar.gz'
+'pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.26.tar.gz'
 
 `pip install  git+https://github.com/projx/prjxcore.git`
 
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
+- [v0.26](https://github.com/projx/prjxcore/archive/refs/tags/v0.26.tar.gz) - Fixed couple of typos
 - [v0.25](https://github.com/projx/prjxcore/archive/refs/tags/v0.25.tar.gz) - Temporarily disabled SSL check for Kuma Hook
 - [v0.24](https://github.com/projx/prjxcore/archive/refs/tags/v0.24.tar.gz) - Fix for Base class 
 - [v0.23](https://github.com/projx/prjxcore/archive/refs/tags/v0.23.tar.gz) - Added Factory class, This is utility class for loading/saving (pickling) objects, also has functions for creating references to classes and functions, so they can be dynamically created.
