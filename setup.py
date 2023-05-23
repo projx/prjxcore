@@ -6,14 +6,15 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='prjxcore',
-     version='0.25' ,
+     version='0.26' ,
      author="prjx",
      author_email="kelvin@prjx.uk",
      description="A collection of base-classes used for common tasks, such as Config loading, logging etc",
      long_description=long_description,
-    long_description_content_type="text/markdown",
+     long_description_content_type="text/markdown",
      packages=setuptools.find_packages(),
      classifiers=[
          "Programming Language :: Python :: 3"
      ],
  )
+
