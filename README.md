@@ -2,15 +2,20 @@
 
 ## Install
 
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.27.tar.gz`
+
+`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.27.tar.gz`
+
 `pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.26.tar.gz`
 
-'pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.26.tar.gz'
+`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.27.tar.gz`
 
 `pip install  git+https://github.com/projx/prjxcore.git`
 
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
+- [v0.27](https://github.com/projx/prjxcore/archive/refs/tags/v0.27.tar.gz) - Update ConfigManager to allow saving of seperate sections to seperate files, also added function to clear all config.
 - [v0.26](https://github.com/projx/prjxcore/archive/refs/tags/v0.26.tar.gz) - Fixed couple of typos
 - [v0.25](https://github.com/projx/prjxcore/archive/refs/tags/v0.25.tar.gz) - Temporarily disabled SSL check for Kuma Hook
 - [v0.24](https://github.com/projx/prjxcore/archive/refs/tags/v0.24.tar.gz) - Fix for Base class 
@@ -25,4 +30,4 @@ Version Note:
 - v0.15 - Added set_section() and create "main" default section in ConfigManager
 - v0.14 - Added AppTimer, provide a stopwatch for function / app execution time.
 - v0.13 - Added ConfigManager.set_all() to allow setting on all elements progmatically.
-- v0.12 - Initial split out.     l
+- v0.12 - Initial split out.   

@@ -16,11 +16,17 @@ class ConfigManager():
     format = "yml"
 
     @classmethod
-    def __serialise(cls):
+    def __serialise(cls, section=False):
+        data = {}
+        if section!=False:
+            data[section] = cls.config[section]
+        else:
+            data = cls.config
+
         if cls.format == "yml":
-            return yaml.dump(cls.config, default_flow_style=False)
+            return yaml.dump(data, default_flow_style=False)
         elif cls.format == "json":
-            return json.dumps(cls.config, indent=4)
+            return json.dumps(data, indent=4)
         else:
             print("No config format specified")
 
@@ -70,10 +76,14 @@ class ConfigManager():
         cls.config_path = path
 
     @classmethod
-    def save_to_file(cls):
-        output = cls.__serialise()
-        path = cls.get_config_path()
-        with open(path, 'w') as filehandle:
+    def save_to_file(cls, config_path=False, section=False):
+        if config_path:
+            cls.config_path = config_path
+        else:
+            config_path = cls.get_config_path()
+
+        output = cls.__serialise(section)
+        with open(config_path, 'w') as filehandle:
             filehandle.write(output)
 
     @classmethod
@@ -94,3 +104,6 @@ class ConfigManager():
     def set_all(cls, data : dict):
         cls.config = data
 
+    @classmethod
+    def clear_all(cls):
+        cls.config = dict()
