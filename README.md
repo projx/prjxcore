@@ -2,19 +2,20 @@
 
 ## Install
 
-`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.27.tar.gz`
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.30.tar.gz`
 
-`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.27.tar.gz`
+`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.30.tar.gz`
 
-`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.26.tar.gz`
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.30.tar.gz`
 
-`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.27.tar.gz`
+`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.30.tar.gz`
 
 `pip install  git+https://github.com/projx/prjxcore.git`
 
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
+- [v0.30](https://github.com/projx/prjxcore/archive/refs/tags/v0.27.tar.gz) - Added CLI wrapper "CMDRunner" along with a factory class to create CLI commands.
 - [v0.27](https://github.com/projx/prjxcore/archive/refs/tags/v0.27.tar.gz) - Update ConfigManager to allow saving of seperate sections to seperate files, also added function to clear all config.
 - [v0.26](https://github.com/projx/prjxcore/archive/refs/tags/v0.26.tar.gz) - Fixed couple of typos
 - [v0.25](https://github.com/projx/prjxcore/archive/refs/tags/v0.25.tar.gz) - Temporarily disabled SSL check for Kuma Hook
