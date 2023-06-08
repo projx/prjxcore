@@ -87,7 +87,7 @@ class ConfigManager():
             filehandle.write(output)
 
     @classmethod
-    def load(cls, config_path = False):
+    def load_to_dict(cls, config_path = False):
         if config_path:
             cls.config_path = config_path
         else:
@@ -97,6 +97,11 @@ class ConfigManager():
             filecontent = filehandle.read()
 
         conf = cls.__unserialise(filecontent)
+        return conf
+
+    @classmethod
+    def load(cls, config_path = False):
+        conf = cls.load_to_dict(config_path)
         for key, item in conf.items():
             cls.config[key] = item
 
