@@ -9,6 +9,8 @@ from abc import ABC, abstractmethod
 import requests
 from prjxcore.AppTimer import AppTimer
 from pprint import pprint
+import urllib3
+
 ### https://kuma.prjx.uk/api/push/cc0gz3IGAd?status=up&msg=ASDASDASDASD&ping=40
 
 class Hook(object):
@@ -19,7 +21,7 @@ class Hook(object):
 class HookSender(Hook):
 
 
-    def __init__(self, url, use_timer=False):
+    def __init__(self, url, use_timer=False, verify_ssl=False):
         self.logs = []
         self.url = url
         self.use_timer = use_timer
@@ -28,8 +30,13 @@ class HookSender(Hook):
         else:
             self.use_timer = False
 
+        if verify_ssl == False:
+            urllib3.disable_warnings()
+
     def log(self, msg):
         self.logs.append(msg)
+
+    
 
     def send(self, status, msg, ping):
         if self.use_timer:

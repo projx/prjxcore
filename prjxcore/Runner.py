@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 from prjxcore.AppLog import *
 from prjxcore.Base import *
 
-class BaseCMD:
+class BaseCMD(Base):
     """
     Base class, used to define the interface for a command which ran by the CMDRunner class.
 
@@ -79,7 +79,6 @@ class CMDRunner(Base):
             if is_dryrun == False:
                 applog.debug("Runner: Executing now")
                 result = subprocess.run(self.generated_call, capture_output = True, text=True, check=True, shell=True)
-                applog.info("Runner Output: \n%s" % result.stdout)
             else:
                 applog.debug("Runner: Dryrun is enabled, skipping execution")
                 return True
