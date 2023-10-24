@@ -90,13 +90,11 @@ class CMDRunner(Base):
             return True
 
         except subprocess.CalledProcessError as e:
-            applog.error("Runner Error: %s" % e)
             applog.error("*********************************************************************")
-            applog.error("Error from call: %s" % e.stderr)
+            applog.error("Runner Command: %s" % e)
             applog.error("*********************************************************************")
-            applog.debug("*")
-            applog.debug("*")
-            applog.debug("*********************************************************************")
+            applog.error("Runner Error: %s" % e.stderr)
+            applog.error("*********************************************************************")
             applog.debug("Stack Trace: ")
             applog.debug("*********************************************************************")
 

@@ -2,21 +2,22 @@
 
 ## Install
 
-`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.35.tar.gz`
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.36.tar.gz`
 
-`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.35.tar.gz`
+`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.36.tar.gz`
 
-`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.35.tar.gz`
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.36.tar.gz`
 
-`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.35.tar.gz`
+`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.36.tar.gz`
 
 `pip install  git+https://github.com/projx/prjxcore.git`
 
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
-- [v0.35](https://github.com/projx/prjxcore/archive/refs/tags/v0.35.tar.gz) - Updated CMDRunner to tidy up error handling
-- [v0.35](https://github.com/projx/prjxcore/archive/refs/tags/v0.35.tar.gz) - Updated CMDRunner to tidy up error handling
+- [v0.36](https://github.com/projx/prjxcore/archive/refs/tags/v0.36.tar.gz) - Updated CMDRunner to tidy up error handling
+- [v0.35](https://github.com/projx/prjxcore/archive/refs/tags/v0.35.tar.gz) - Fixed Typo
+- [v0.34](https://github.com/projx/prjxcore/archive/refs/tags/v0.34.tar.gz) - Updated CMDRunner to tidy up error handling
 - [v0.33](https://github.com/projx/prjxcore/archive/refs/tags/v0.33.tar.gz) - Updated KumaHook to add SSL verify supress parameter
 - [v0.32](https://github.com/projx/prjxcore/archive/refs/tags/v0.32.tar.gz) - Added "load_to_dict()" to ConfigManager
 - [v0.31](https://github.com/projx/prjxcore/archive/refs/tags/v0.31.tar.gz) - Added CLI wrapper "CMDRunner" along with a factory class to create CLI commands.
