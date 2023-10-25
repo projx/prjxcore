@@ -2,11 +2,11 @@
 
 ## Install
 
-`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz`
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.37a.tar.gz`
 
-`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz`
+`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.37a.tar.gz`
 
-`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz`
+`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.37a.tar.gz`
 
 `pip install  git+https://github.com/projx/prjxcore.git`
 

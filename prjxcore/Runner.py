@@ -90,17 +90,22 @@ class CMDRunner(Base):
             if is_dryrun == False:
                 applog.debug("Runner: Executing now\n{}".format(self.generated_call))
                 if cmd.internal_call():
-                    result = self.results = cmd.run_func()
+                    self.result = cmd.run_func()
+                    self.stdout = "This was an internal function call (no subprocess)"
+                    self.stderr = ""
+                    self.ran_call = "This was an internal function call (no subprocess)"
+                    self.code = 0
                 else:
-                    result = subprocess.run(self.generated_call, capture_output = True, text=True, check=True, shell=True)
+                    results = subprocess.run(self.generated_call, capture_output = True, text=True, check=True, shell=True)
+                    self.stdout = result.stdout
+                    self.stderr = result.stderr
+                    self.ran_call = result.args
+                    self.code = result.returncode
             else:
                 applog.debug("Runner: Dryrun is enabled, skipping execution")
                 return True
 
-            self.stdout = result.stdout
-            self.stderr = result.stderr
-            self.ran_call = result.args
-            self.code = result.returncode
+
             return True
 
         except subprocess.CalledProcessError as e:

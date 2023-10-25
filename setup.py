@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='prjxcore',
-     version='0.37',
+     version='0.37a',
      author="prjx",
      author_email="kelvin@prjx.uk",
      description="A collection of base-classes used for common tasks, such as Config loading, logging etc",
