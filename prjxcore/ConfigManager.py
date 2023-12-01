@@ -8,6 +8,7 @@
 import yaml
 import json
 import os
+from prjxcore.utils import *
 
 class ConfigManager():
     format = ""
@@ -86,6 +87,11 @@ class ConfigManager():
         with open(config_path, 'w') as filehandle:
             filehandle.write(output)
 
+    
+    @classmethod
+    def merge(cls, data):
+        cls.config = merge_nested_dicts(cls.config, data)
+    
     @classmethod
     def load_to_dict(cls, config_path = False):
         if config_path:

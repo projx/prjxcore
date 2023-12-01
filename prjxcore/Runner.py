@@ -97,10 +97,10 @@ class CMDRunner(Base):
                     self.code = 0
                 else:
                     results = subprocess.run(self.generated_call, capture_output = True, text=True, check=True, shell=True)
-                    self.stdout = result.stdout
-                    self.stderr = result.stderr
-                    self.ran_call = result.args
-                    self.code = result.returncode
+                    self.stdout = results.stdout
+                    self.stderr = results.stderr
+                    self.ran_call = results.args
+                    self.code = results.returncode
             else:
                 applog.debug("Runner: Dryrun is enabled, skipping execution")
                 return True

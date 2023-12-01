@@ -2,17 +2,18 @@
 
 ## Install
 
-`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.37a.tar.gz`
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.38.tar.gz`
 
-`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.37a.tar.gz`
+`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.38.tar.gz`
 
-`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.37a.tar.gz`
+`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.38.tar.gz`
 
 `pip install  git+https://github.com/projx/prjxcore.git`
 
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
+- [v0.38](https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz) - Added odds and sods function holder and merge-nested-dict to ConfigManager
 - [v0.37](https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz) - Updated CMDRunner to be able to run Python function, as well as CLI commands
 - [v0.36](https://github.com/projx/prjxcore/archive/refs/tags/v0.36.tar.gz) - Updated CMDRunner to tidy up error handling
 - [v0.35](https://github.com/projx/prjxcore/archive/refs/tags/v0.35.tar.gz) - Fixed Typo
