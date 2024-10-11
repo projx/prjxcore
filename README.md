@@ -13,6 +13,7 @@
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
+- [v0.39](https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz) - Updated AppLog to make the flag handling more robust
 - [v0.38](https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz) - Added odds and sods function holder and merge-nested-dict to ConfigManager
 - [v0.37](https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz) - Updated CMDRunner to be able to run Python function, as well as CLI commands
 - [v0.36](https://github.com/projx/prjxcore/archive/refs/tags/v0.36.tar.gz) - Updated CMDRunner to tidy up error handling
