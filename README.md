@@ -2,17 +2,18 @@
 
 ## Install
 
-`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.39.tar.gz`
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.40.tar.gz`
 
-`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.39.tar.gz`
+`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.40.tar.gz`
 
-`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.39.tar.gz`
+`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.40.tar.gz`
 
 `pip install  git+https://github.com/projx/prjxcore.git`
 
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
+- [v0.40](https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz) - Added ConfigManager.get_all()
 - [v0.39](https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz) - Updated AppLog to make the flag handling more robust
 - [v0.38](https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz) - Added odds and sods function holder and merge-nested-dict to ConfigManager
 - [v0.37](https://github.com/projx/prjxcore/archive/refs/tags/v0.37.tar.gz) - Updated CMDRunner to be able to run Python function, as well as CLI commands
