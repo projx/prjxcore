@@ -72,24 +72,33 @@ class applog:
     def set_info(cls, status):
         cls.infoEnabled = status
         cls.handler.setLevel(logging.INFO)
+
+    @classmethod
+    def is_info_enabled(cls):
+        return cls.infoEnabled
         
     @classmethod
     def set_error(cls, status):
         cls.errorEnabled = status
         cls.handler.setLevel(logging.ERROR)
 
+    @classmethod
+    def is_error_enabled(cls):
+        return cls.errorEnabled
 
     @classmethod
     def debug(cls, msg):
-        print("Debug status {}".format(cls.debugEnabled))
         if cls.loggingEnabled and cls.debugEnabled:
             cls.handler.debug(msg)
+    
+    @classmethod
+    def is_debug_enabled(cls):
+        return cls.debugEnabled
 
     @classmethod
     def info(cls, msg):
         if cls.loggingEnabled and cls.infoEnabled:
             cls.handler.info(msg)
-
 
 
     @classmethod
