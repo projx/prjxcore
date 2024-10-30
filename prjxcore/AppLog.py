@@ -11,6 +11,7 @@ class applog:
     loggingEnabled = False
     debugEnabled = False
     infoEnabled = False
+    errorEnabled = False
     initialised = False
     path = ""
     name = ""
