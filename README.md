@@ -2,17 +2,18 @@
 
 ## Install
 
-`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.42.tar.gz`
+`pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.43.tar.gz`
 
-`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.42.tar.gz`
+`python3.11 -m pip install https://github.com/projx/prjxcore/archive/refs/tags/v0.43.tar.gz`
 
-`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.42.tar.gz`
+`pip install --upgrade https://github.com/projx/prjxcore/archive/refs/tags/v0.43.tar.gz`
 
 `pip install  git+https://github.com/projx/prjxcore.git`
 
 `pip install --upgrade git+https://github.com/projx/prjxcore.git`
 
 Version Note:
+- [v0.43](https://github.com/projx/prjxcore/archive/refs/tags/v0.43.tar.gz) - Added 1Password runner
 - [v0.42](https://github.com/projx/prjxcore/archive/refs/tags/v0.42.tar.gz) - Updated AppLog, adding functions to check statuses
 - [v0.41](https://github.com/projx/prjxcore/archive/refs/tags/v0.41.tar.gz) - Updated AppLog, adding functions to check statuses
 - [v0.40](https://github.com/projx/prjxcore/archive/refs/tags/v0.40.tar.gz) - Added ConfigManager.get_all()
